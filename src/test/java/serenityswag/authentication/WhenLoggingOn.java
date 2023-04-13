@@ -15,7 +15,7 @@ import static serenityswag.authentication.User.STANDARD_USER;
 @RunWith(SerenityRunner.class)
 public class WhenLoggingOn {
 
-    @Managed
+    @Managed(options = "--remote-allow-origins=*")
     WebDriver driver;
 
     @Steps
@@ -25,7 +25,6 @@ public class WhenLoggingOn {
 
     @Test
     public void usersCanLogOnViaTheHomePage() {
-
         login.as(STANDARD_USER);
 
         // Should see product catalog
