@@ -3,6 +3,7 @@ package seleniumeasy.pageobjects;
 import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.WhenPageOpens;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
@@ -24,4 +25,5 @@ public abstract class SeleniumEasyForm extends PageObject {
             waitFor(invisibilityOfElementLocated(POPUP_WINDOW_CLOSE_ICON));
         }
     }
+
 }
