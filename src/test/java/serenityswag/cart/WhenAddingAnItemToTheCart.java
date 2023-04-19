@@ -21,7 +21,7 @@ import static serenityswag.authentication.User.STANDARD_USER;
 @RunWith(SerenityRunner.class)
 public class WhenAddingAnItemToTheCart {
 
-    @Managed(driver = "chrome")
+    @Managed(driver = "microsoftedge", options = "--remote-allow-origins=*")
     WebDriver driver;
 
     @Steps
@@ -88,7 +88,7 @@ public class WhenAddingAnItemToTheCart {
 
         // Check that each item in the cart has a price
         assertThat(cartPage.items()).hasSize(3)
-                .allMatch(item -> item.price() > 0.0);
+                .allMatch(item -> item.getPrice() > 0.0);
     }
 
     @Test

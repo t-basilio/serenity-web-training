@@ -15,7 +15,7 @@ import static serenityswag.authentication.User.STANDARD_USER;
 @RunWith(SerenityRunner.class)
 public class WhenLoggingOn {
 
-    @Managed
+    @Managed(driver = "microsoftedge", options = "--remote-allow-origins=*")
     WebDriver driver;
 
     @Steps
@@ -33,6 +33,6 @@ public class WhenLoggingOn {
 
         Serenity.reportThat("The inventory page should be displayed with the correct title",
                 () -> assertThat(inventoryPage.getHeading()).isEqualToIgnoringCase("Products")
-                );
+         );
     }
 }
