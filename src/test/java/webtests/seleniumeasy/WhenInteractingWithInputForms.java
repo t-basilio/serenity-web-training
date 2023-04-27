@@ -27,7 +27,7 @@ public class WhenInteractingWithInputForms {
     /**
      * Basic form fields:
      * Enter a message and check that the message is correctly displayed
-     * https://www.seleniumeasy.com/test/basic-first-form-demo.html
+     * http://demo.seleniumeasy.com/basic-first-form-demo.html
      */
 
     SingleInputFieldForm singleInputFieldForm;
@@ -46,7 +46,7 @@ public class WhenInteractingWithInputForms {
     /**
      * Basic form fields (part 2)
      * Enter two values and calculate the result
-     * https://www.seleniumeasy.com/test/basic-first-form-demo.html
+     * http://demo.seleniumeasy.com/basic-first-form-demo.html
      */
 
     TwoInputFieldForm twoInputFieldForm;
