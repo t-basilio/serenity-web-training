@@ -17,7 +17,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @RunWith(SerenityRunner.class)
 public class WhenViewingHighlightedProducts {
 
-    @Managed(driver = "chrome")
+    @Managed
     WebDriver driver;
 
     @Steps
